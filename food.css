@@ -1,34 +1,46 @@
 body
 {
   font-family: 'Roboto',sans-serif;
+  word-break: break-all;
+
 }
 
 .block
 {
-  /*max-width: 768px;*/
-
+  margin: 0 auto;
 }
 
+header{
+  background-color: #F6F6F6;
+}
+.tete,.loc{
+  width: 100%;
 
+
+}
 #logo
 {
   background-image: url("images/logo/ohmyfood.jpg");
   background-size: contain;
   height: 30px;
   background-repeat: no-repeat;
+  background-position: center;
 
 }
 .loc
 {
   display: flex;
   flex-direction: row;
-  background-color:grey;
+  background-color:#EAEAEA;
+  align-items: center;
+  justify-content: center;
 }
 #explorer{
-  background-color: #ccc;
+  background-color: #F6F6F6;
   display:flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 #explorer h3{
   margin:0;
@@ -38,24 +50,52 @@ body
   font-weight: bold;
   color: #fff;
   border-radius: 50px;
-  border: 2px pink;
-  background-color: pink;
+  border: 2px ;
+  background-image:linear-gradient(to bottom, #FF79DA , #9356DC);
   width: 165px;
   margin: 10px;
   padding: 12px;
   display: flex;
 }
+
+/* SECTION FONCTIONNEMENT*/
+.rond
+{
+    border-radius: 50px;
+    background-color: #9356DC;
+    color: #fff;
+    height: 21px;
+    width: 21px;
+    display: flex;
+    font-size: 0.6em;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:-10px;
+}
 .fonc
 {
   font-weight: bold;
   border-radius: 15px;
-  background-color: #ccc;
-  width: 185px;
-  padding: 21px;
-  margin: 22px;
+  background-color: #F6F6F6;
+  box-shadow: 3px 5px 5px #e2e2e2;
+  width: 80%;
+  padding: 25px;
+  margin: 10px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
+
+.fonc:hover{
+
+  text-decoration-color: none;
+  background-color:#F5EDFF;
+}
+.fonc i:hover{
+  color: #9356DC;
+}
+
 .fonc0
 {
   display:flex;
@@ -63,6 +103,57 @@ body
   align-items: center;
   width: 100%;
 }
+/*SECTION RESTAURANT*/
+#restaurant{
+  background-color: #F6F6F6;
+  position: relative;
+}
+#restaurant h3{
+  padding: 30px 0 0 20px;
+}
+.acceuil
+{
+  border-radius: 15px;
+  border:2px;
+  margin:20px;
+  box-shadow: 3px 5px 5px  #e2e2e2;
+}
+.nouveau{
+  border-radius: 2px;
+  background-color:#99E2D0;
+  color: #008766;
+  width: auto;
+  padding: 5px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 15px;
+  top: 14px;
+}
+
+.desc{
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+}
+
+.desc h5,p{
+  margin: 0;
+}
+.icone{
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  right:66px;
+  height: 29px;
+  font-size: 1.5em;
+}
+/*icone*/
+.fa-heart{
+  background: linear-gradient(to bottom, purple , pink);
+}
+
 #enchanté,#française,#gout,#sens{
   border-radius: 15px 15px 0 0 ;
   background-position: center;
@@ -74,6 +165,7 @@ body
   {
   background-image: url("images/restaurants/enchanté.jpg");
   background-size:cover;
+  position: relative;
   }
 
 #française
@@ -86,6 +178,7 @@ body
     {
     background-image: url("images/restaurants/gout.jpg");
     background-size:cover;
+    position: relative;
     }
 
 #sens
@@ -93,3 +186,22 @@ body
     background-image: url("images/restaurants/sens.jpg");
     background-size:cover;
     }
+
+footer{
+  background-color: #353535;
+  color: #fff;
+  padding: 0 0 20px 25px;
+}
+
+footer h4{
+  font-family: 'Shrikhand',sans-serif;
+  letter-spacing: 0.1em;
+  padding-top: 20px;
+}
+footer i{
+  padding-right: 10px;
+  font-size: 0.8em;
+}
+.fa-hands-helping{
+  font-size: 0.6em;
+}
