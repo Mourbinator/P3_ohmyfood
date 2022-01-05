@@ -14,9 +14,11 @@ header{
 }
 .tete,.loc{
   width: 100%;
+  }
 
-
-}
+  a {
+    text-decoration: none;
+  }
 #logo
 {
   background-image: url("images/logo/ohmyfood.jpg");
