@@ -7,6 +7,8 @@ body
 {
   margin: 0 auto;
 }
+
+/* partie header et nav */
 header{
   display:flex;
   flex-direction: column;
@@ -19,6 +21,11 @@ nav{
 }
 nav i{
   font-size: 1.2em;
+}
+
+a
+{
+  text-decoration: none;
 }
 
 #logo
@@ -66,6 +73,7 @@ nav i{
   height: 300px;
 }
 
+/* end partie header et nav */
 
 
 .carte{
@@ -135,6 +143,7 @@ nav i{
 .desc1:hover .check{
   width: 55px;
   height: 68px;
+
 }
 
 .desc1:hover i{
@@ -148,8 +157,9 @@ nav i{
   width: 82%;
 }
 
-
-
+.desc1:hover span{
+  margin-right: 15px;
+}
 
 .desc1 h5{
   font-size: 1em;
@@ -158,9 +168,6 @@ nav i{
 .desc1 p{
   font-size: 0.85em;
   margin: 0;
-}
-.desc1:hover{
-  /*placer hover vert*/
 }
 
 .desc1 span{

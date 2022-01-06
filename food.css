@@ -89,12 +89,16 @@ header{
   justify-content: center;
   position: relative;
 }
+.fonc i{
+  display: flex;
+  justify-content: flex-start;
+}
 
 .fonc:hover{
-
   text-decoration-color: none;
   background-color:#F5EDFF;
 }
+
 .fonc:hover i{
   color: #9356DC;
 }
@@ -153,7 +157,7 @@ header{
   font-size: 1.5em;
 }
 /*icone*/
-.fa-heart{
+.fa-heart:hover{
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
