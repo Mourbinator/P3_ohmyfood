@@ -143,7 +143,8 @@ a
 .desc1:hover .check{
   width: 55px;
   height: 68px;
-
+  transition-property: width;
+  transition-duration: 0.5s;
 }
 
 .desc1:hover i{
@@ -155,6 +156,8 @@ a
 
 .desc1:hover .desc2{
   width: 82%;
+  transition-property: width;
+    transition-duration: 0.5s;
 }
 
 .desc1:hover span{
