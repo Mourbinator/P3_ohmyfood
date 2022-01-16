@@ -7,18 +7,26 @@ body
 .block
 {
   margin: 0 auto;
+  max-width: 1400px;
 }
 
-header{
+header
+{
   background-color: #F6F6F6;
 }
-.tete,.loc{
+
+.tete,.loc
+{
   width: 100%;
+  padding:14px 0;
   }
 
-  a {
-    text-decoration: none;
+  a,footer a
+  {
+    text-decoration: none ;
+    color:inherit;
   }
+
 #logo
 {
   background-image: url("images/logo/ohmyfood.jpg");
@@ -26,8 +34,8 @@ header{
   height: 30px;
   background-repeat: no-repeat;
   background-position: center;
-
 }
+
 .loc
 {
   display: flex;
@@ -35,17 +43,35 @@ header{
   background-color:#EAEAEA;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
+  padding: 14px 0;
 }
-#explorer{
+
+#explorer
+{
   background-color: #F6F6F6;
   display:flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  word-break: break-word;
 }
-#explorer h3{
-  margin:0;
+
+#explorer h3
+{
+  margin: 0 37px;
+  font-size: 1.6em;
+  padding: 30px 0 10px 0;
 }
+
+#explorer div:nth-child(2)
+{
+  margin: 0 15px;
+  padding-bottom: 20px;
+  font-size: 1.1em;
+}
+
+
 .explorer1
 {
   font-weight: bold;
@@ -54,7 +80,7 @@ header{
   border: 2px ;
   background-image:linear-gradient(to bottom, #FF79DA , #9356DC);
   width: 165px;
-  margin: 10px;
+  margin: 10px 0 50px 0;
   padding: 12px;
   display: flex;
   justify-content: center;
@@ -77,15 +103,29 @@ header{
     /*position: absolute;
     left:-10px;*/
 }
-.icone0{
+
+.doubleicon
+{
+  display: flex;
+}
+
+
+
+.icone0
+{
   position: absolute;
   left:-10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
 }
+
+.icone0 i
+{
+  color:grey;
+}
+
 .fonc
 {
   font-weight: bold;
@@ -99,17 +139,26 @@ header{
   justify-content: center;
   position: relative;
 }
-.fonc i{
+.fonc i
+{
   display: flex;
   justify-content: flex-start;
+  font-size: 1em;
 }
 
-.fonc:hover{
+.doubleicon i:nth-child(1)
+{
+  font-size: 0.95em;
+}
+
+.fonc:hover
+{
   text-decoration-color: none;
   background-color:#F5EDFF;
 }
 
-.fonc:hover i{
+.fonc:hover i
+{
   color: #9356DC;
 }
 
@@ -120,14 +169,21 @@ header{
   align-items: center;
   width: 100%;
 }
+
 /*SECTION RESTAURANT*/
-#restaurant{
+#restaurant
+{
   background-color: #F6F6F6;
   position: relative;
 }
-#restaurant h3{
-  padding: 30px 0 0 20px;
+
+#restaurant h3, #fonctionnement h3
+{
+  padding: 25px 0 0 20px;
+  font-weight: bold;
+  font-size: 2em;
 }
+
 .acceuil
 {
   border-radius: 15px;
@@ -149,16 +205,20 @@ header{
   top: 14px;
 }
 
-.desc{
+.desc
+{
   display: flex;
   flex-direction: column;
   padding:10px;
 }
 
-.desc h5,p{
+.desc h5,p
+{
   margin: 0;
 }
-.icone{
+
+.icone
+{
   display: flex;
   align-items: flex-end;
   position: absolute;
@@ -166,11 +226,28 @@ header{
   height: 29px;
   font-size: 1.5em;
 }
+/*hide icon solide and show regular*/
+.icone i:nth-child(2)
+{
+  display:none;
+}
+/*hide regular in hover*/
+.icone:hover i:nth-child(1)
+{
+  display: none;
+}
+
+/* hover icone solide*/
+.icone:hover i:nth-child(2)
+{ display:inline-block;
+}
+
 /*icone*/
-.fa-heart:hover{
+.icone:hover{
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
 
   /*background: linear-gradient(to bottom, #9356DC , #FF79DA);*/
 }
@@ -219,6 +296,7 @@ footer h4{
   font-family: 'Shrikhand',sans-serif;
   letter-spacing: 0.1em;
   padding-top: 20px;
+  margin-top: 0;
 }
 footer i{
   padding-right: 10px;
