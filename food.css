@@ -305,3 +305,24 @@ footer i{
 .fa-hands-helping{
   font-size: 0.6em;
 }
+@media (min-width: 800px) and (max-width: 1800px)
+{
+  .restoblok
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between
+  }
+
+  .desc
+  {
+    position: relative;
+  }
+
+  .acceuil
+  {
+    width: 45%;
+  }
+
+}
