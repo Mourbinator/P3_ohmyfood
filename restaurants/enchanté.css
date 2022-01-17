@@ -96,6 +96,27 @@ a
   font-family: 'Shrikhand',sans-serif;
   font-size: 1.7em;
 }
+.menu{
+  /*display: flex;*/
+}
+.platblok{
+  display: flex;
+}
+
+.menu h6
+{
+  font-weight: lighter;
+  font-size: 1em;
+  margin: 0;
+  padding: 20px 0 0 16px;
+}
+.border
+{
+  border-bottom: 4px solid #99E2D0;
+  width: 46px;
+  margin: 5px 0 0 16px;
+}
+
 .desc2{
   display: flex;
   flex-direction: column;
@@ -118,6 +139,7 @@ a
 }
 .check-box{
   position: relative;
+  cursor:pointer;
 
 }
 .check{
@@ -179,18 +201,22 @@ a
   margin: 0;
 }
 
-.desc1 span{
+.desc1 span
+{
   font-weight: bold;
   display: flex;
 }
-.cmd{
+.cmd
+{
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 24px 0;
+  cursor: pointer;
 }
 
-.btn-cmd{
+.btn-cmd
+{
   font-weight: bold;
   color: #fff;
   border-radius: 50px;
@@ -204,7 +230,8 @@ a
   align-items: center;
 }
 
-footer{
+footer
+{
   background-color: #353535;
   color: #fff;
   padding: 0 0 20px 25px;
@@ -213,15 +240,39 @@ footer{
 
 }
 
-footer h4{
+footer h4
+{
   font-family: 'Shrikhand',sans-serif;
   letter-spacing: 0.1em;
   padding-top: 20px;
 }
-footer i{
+footer i
+{
   padding-right: 10px;
   font-size: 0.8em;
 }
-.fa-hands-helping{
+.fa-hands-helping
+{
   font-size: 0.6em;
+}
+
+/*PARTIE DESKTOP*/
+
+@media (min-width: 790px) and (max-width: 1800px)
+{
+  .desc2{
+    margin-right: 50px
+  }
+  .platblok
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+
+
+
+
+
 }
