@@ -181,6 +181,7 @@ header
 {
   background-color: #F6F6F6;
   position: relative;
+  padding-bottom: 40px;
 }
 
 #restaurant h3, #fonctionnement h3
@@ -321,6 +322,7 @@ footer i{
     flex-wrap: wrap;
     justify-content: space-between
   }
+
 
   .desc
   {
