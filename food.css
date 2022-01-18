@@ -47,6 +47,12 @@ header
   padding: 14px 0;
 }
 
+.loc i
+{
+  position: relative;
+  left: -30px;
+}
+
 #explorer
 {
   background-color: #F6F6F6;
@@ -209,7 +215,8 @@ header
 {
   display: flex;
   flex-direction: column;
-  padding:10px;
+  padding: 15px;
+  line-height: 20px;
 }
 
 .desc h5,p
