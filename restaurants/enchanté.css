@@ -8,6 +8,8 @@ body
   margin: 0 auto;
 }
 
+
+
 /* partie header et nav */
 header{
   display:flex;
@@ -129,7 +131,7 @@ a
 .desc1
 {
   border-radius: 15px;
-  background-color: #F6F6F6;
+  background-color: #fff;
   box-shadow: 3px 5px 5px #e2e2e2;
   width: 95%;
   /*padding: 15px;*/
@@ -195,28 +197,38 @@ a
   transition-delay: 1s;
   opacity: 0;*/
 
-  animation: anim 2s ease-in-out;
-  /*animation-duration: 5s;
-  animation-delay: 2s;*/
+  /*animation: anim 1s ease-in-out;
+  animation-fill-mode: forwards;*/
 }
-/*.desc1.animated{
-opacity: 1;
-transition-duration:2s
-}*/
+/*---------------------------------*/
+/*ANIMATION PROGRESSIVE plats*/
+.menu :nth-child(3){
+  animation: anim 1s 100ms ease-in-out forwards;
+}
+.menu :nth-child(4){
+  animation: anim 1s 300ms ease-in-out forwards;
+}
+.menu :nth-child(5){
+  animation: anim 1s 500ms ease-in-out forwards;
+}
+.menu :nth-child(6){
+  animation: anim 1s 700ms ease-in-out forwards;
+}
+
+
 @keyframes anim
 {
   from{
     opacity: 0;
-    transform: scale(0);
+    transform: translateY(40px);
   }
   to{
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
   }
-
 }
 
-/*test animation desc end*/
+/* animation desc end*/
 
 
 .desc1:hover span{
@@ -259,6 +271,13 @@ transition-duration:2s
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 300ms;
+
+}
+
+.btn-cmd:hover{
+  opacity: 0.8;
+  box-shadow: 3px 5px 5px #E2E2E2;
 }
 
 footer
